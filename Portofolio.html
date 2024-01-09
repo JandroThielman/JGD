@@ -1,3 +1,9 @@
+<!--
+    Jandro = Klaar
+    Junior = Niet Klaar 
+    Dean = Niet Klaar
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +13,10 @@
     <link rel="shortcut icon" href="./Images/scroll.svg" type="image/x-icon">
     <title>Portofolio</title>
 </head>
-<body class="pbg">
 
-    <audio id="bg-sound">
+<body>
+
+    <audio id="bg-sound" controls autoplay>
         <source src="./Music-FX/just-relax.mp3">
     </audio>
 
@@ -26,7 +33,8 @@
             <li><a href="Uitleggame.html">Uitleg Game</a></li>
             <li><a href="Speeldegame.html">Speel de Game</a></li>
             <li><a href="Tcrs.html">TCR</a></li>
-            <li><a href="mening.html">Mening</a></li>
+            <li><a href="favoriete-doel.html">Favoriete Doel</a></li>
+            <li><a href="PM.html">Persoonlijke Motivatie</a></li>
         </ul>
     </nav>
 
@@ -41,21 +49,48 @@
         <div class="projall">
             <div class="proj1">
                 <h1 class="projt">Project 1: Magic</h1>
-                <img src="./Images/magic.png" width="350vw">
+                <img src="./Images/magic.png" width="99%" id="proj-img-01">
+                <p id="proj-description01">Mijn inspiratie voor project 1 was magie, 
+                    ik was altijd bezig met goocheltrucs en toen ik de code ontdekte 
+                    waarmee je afbeeldingen kunt verbergen, wist ik dat ik een website 
+                    moest maken met de code erin.
+                </p>
+                <div>
+                    <button class="Info" onclick="jp1i1()">Image</button>
+                    <button class="Info" onclick="jp1d1()">Description</button>
+                </div>
+                
                 <ul class="btn">
                     <li class="btn-li"><a class="btn-a" href="./Projects/Jandro/Opdracht_6.3 Javascript/Index.html" target="_blank" onclick="FX()">Click</a></li>
                 </ul>
             </div>
+
             <div class="proj2">
                 <h1 class="projt">Project 2: Secret Car Page</h1>
-                <img src="./Images/bc.png" width="350vw">
+                <img src="./Images/bc.png" width="99%" id="proj-img-02">
+                <p id="proj-description02">Mijn inspiratie voor project 2 was auto's. 
+                    Ik heb altijd van auto's gehouden en toen ik de kans kreeg om een 
+                    website te maken, maakte ik deze over auto's.
+                </p>
+                <div>
+                    <button class="Info" onclick="jp2i1()">Image</button>
+                    <button class="Info" onclick="jp2d1()">Description</button>
+                </div>
                 <ul class="btn" onclick="click()">
                     <li class="btn-li"><a class="btn-a" href="./Projects/Jandro/Opdracht_9.1/Index.html" target="_blank" onclick="FX()">Click</a></li>
                 </ul>
             </div>
             <div class="proj3">
                 <h1 class="projt">Project 3: Travelly</h1>
-                <img src="./Images/tr.png" width="350vw">
+                <img src="./Images/tr.png" width="99%" id="proj-img-03">
+                <p id="proj-description03">In project 3 was het niet mijn idee. 
+                    De taak was om de website te maken zoals op de foto, maar ik 
+                    heb mijn eigen effecten toegevoegd.
+                </p>
+                <div>
+                    <button class="Info" onclick="jp3i1()">Image</button>
+                    <button class="Info" onclick="jp3d1()">Description</button>
+                </div>
                 <ul class="btn">
                     <li class="btn-li"><a class="btn-a" href="./Projects/Jandro/Travelly/Index.html" target="_blank" onclick="FX()">Click</a></li>
                 </ul>
@@ -63,6 +98,39 @@
         </div>
 
     </div>
+
+    <div class="p3">
+        <h1 id="junior">Portofolio Van Junior</h1>
+
+        <div class="projall">
+            <div class="proju1">
+                <h1 class="projt">Project 1</h1>
+                <img src="./Images/Junior1.png" width="350vw">
+                <ul class="btn">
+                    <li class="btnj-li"><a class="btn-a" href="./Projects/Junior/p1-Project_OuderAvond/" target="_blank" onclick="FX()">KLIK HIER</a></li>
+                </ul>
+            </div>
+            <div class="proju2">
+                <h1 class="projt">Project 2</h1>
+                <img src="./Images/junior2.png" width="350vw">
+                <ul class="btn" onclick="click()">
+                    <li class="btnj-li"><a class="btn-a" href="./Projects/Junior/Travelly/Travelly/" target="_blank" onclick="FX()">KLIK HIER</a></li>
+                </ul>
+            </div>
+            <div class="proju3">
+                <h1 class="projt">Project 3</h1>
+                <img src="./Images/proj-junior.png" width="350vw">
+                <ul class="btn">
+                    <li class="btnj-li"><a class="btn-a" href="./Projects/Junior/Opdracht_1.2/" target="_blank" onclick="FX()">KLIK HIER</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div> 
+
+    <footer class="footer-portofolio">
+        <h3 class="footer-h3">© Copyright 2023 JGD. All rights reserved.</h3>
+    </footer>
 
     <script src="Javascript.js"></script>
 

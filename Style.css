@@ -54,15 +54,15 @@ nav{
     z-index: 2;
 }
 
-
 ul{
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    padding-inline-start: 0;
 }
 
 li{
-    padding: .9vw 5vh .9vw 5vh;
+    padding: .9vw 3.3vh .9vw 3.3vh;
     font-size: 1.5rem;
     color: #e7dfc6;
 }
@@ -75,11 +75,6 @@ a{
 
 li:hover{
     background-color: #d56f3e;
-}
-
-.pbg{
-    background-image: url(./Images/bw.png);
-    background-size: 100vw;
 }
 
 .bg{
@@ -135,7 +130,7 @@ li:hover{
 .pt{
     font-size: 15rem;
     margin-left: 20vw;
-    margin-top: 20vh;
+    padding-top: 10vh;
     font-size: 9rem;
     font-weight: 900;
     font-family: 'Times New Roman', Times, serif;
@@ -151,10 +146,20 @@ li:hover{
 }
 
 .h3t{
+    margin-top: 5vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
     color: #e7dfc6;
-    font-size: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    width: 98.9vw;
+}
+
+.h3p{
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+    color: #e7dfc6;
+    font-size: 2rem;
     text-align: center;
     width: 98.9vw;
 }
@@ -185,7 +190,9 @@ li:hover{
 
 .p1{
     width: 98.9vw;
-    height: 80vh;
+    height: 92.2vh;
+    background-image: url(./Images/bw.png);
+    background-size: 100vw;
 }
 
 .p2{
@@ -193,17 +200,79 @@ li:hover{
     height: 100vh;
     background-color: #4f5d2f;
 }
+.p3{
+    width: 98.9vw;
+    height: 100vh;
+    background-color: #d56f3e;
+}
+
+.p1-favo-game{
+    width: 98.9vw;
+    height: 100vh;
+    background-color: #d56f3e;
+}
+
+.p1-uitleg{
+    width: 98.9vw;
+    height: 100vh;
+    background-color: #4f5d2f;
+}
+
+.p1-de-game{
+    width: 98.9vw;
+    height: 100vh;
+    background-color: #d56f3e;
+}
+
+.p1-TCR{
+    width: 98.9vw;
+    height: 93vh;
+    background-color: #4f5d2f;
+    display: flex;
+    flex-direction: row;
+}
+
+.p1-favoriete-doel{
+    width: 98.9vw;
+    height: 100vh;
+    background-color: #d56f3e;
+}
+
+.p2-favoriete-doel{
+    width: 98.9vw;
+    height: 100vh;
+    background-color: #5c6644;
+}
 
 #jandro{
     color: #e7dfc6;
     text-align: center;
     font-size: 8rem;
-    padding-top: 10vh;
+    padding-top: 7vh;
+}
+
+#junior{
+    color: #e7dfc6;
+    text-align: center;
+    font-size: 8rem;
+    padding-top: 7vh;
+}
+
+.proju1,.proju2,.proju3{
+    width: 25vw;
+    height: 65vh;
+    background-color: #4f5d2f;
+    border: .5rem solid #5c6644;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .proj1,.proj2,.proj3{
     width: 25vw;
-    height: 60vh;
+    height: 65vh;
     background-color: #d56f3e;
     border: .5rem solid #5c6644;
     border-radius: 5%;
@@ -217,7 +286,7 @@ li:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 5vh;
+    margin-top: 2vh;
 }
 
 .projt{
@@ -230,10 +299,17 @@ li:hover{
 
 .btn{
     list-style-type: none;
-    margin-left: -2.7vw;
+    margin-left: 0;
 }
 
 .btn-li{
+    padding: .9vh 10.8vw .9vh 10.9vw;
+    font-size: 1.5rem;
+    color: #e7dfc6;
+    border-radius: 0rem 0rem .6rem .6rem;
+}
+
+.btnj-li{
     padding: .9vh 10.8vw .9vh 10.9vw;
     font-size: 1.5rem;
     color: #e7dfc6;
@@ -247,4 +323,313 @@ li:hover{
 
 .btn-li:hover{
     background-color: #4f5d2f;
+}
+
+.btnj-li:hover{
+    background-color: #5c6644;
+}
+
+.donate{
+    background-color: #d56f3e;
+    border: 0px solid transparent;
+    width: 18vw;
+    margin-left: 40.5vw;
+    margin-bottom: 2vh;
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: #e7dfc6;
+}
+
+.donate:hover{
+    background-color: #c05b2c;
+    border: 0px solid transparent;
+    width: 18vw;
+    margin-left: 40.5vw;
+    margin-bottom: 2vh;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.footer-portofolio{
+    background-color: rgb(48, 48, 48);
+    width: 98.9vw;
+    height: 20vh;
+}
+
+.footer-h3{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    color: #e7dfc6;
+    font-size: 3rem;
+    text-align: center;
+    width: 98.9vw;
+}
+
+#proj-description01{
+    text-align: center;
+    width: 20vw;
+    color: #e7dfc6;
+    font-weight: 900;
+    z-index: -1;
+    position: absolute;
+    margin-top: 25vh;
+    font-size: 1.2rem;
+}
+
+#proj-img-01{
+    margin-top: 5vh;
+    z-index: 0;
+}
+
+#proj-description02{
+    text-align: center;
+    width: 20vw;
+    color: #e7dfc6;
+    font-weight: 900;
+    z-index: -1;
+    position: absolute;
+    margin-top: 25vh;
+    font-size: 1.2rem;
+}
+
+#proj-img-02{
+    z-index: 0;
+}
+
+#proj-description03{
+    text-align: center;
+    width: 20vw;
+    color: #e7dfc6;
+    font-weight: 900;
+    z-index: -1;
+    position: absolute;
+    margin-top: 25vh;
+    font-size: 1.2rem;
+}
+
+#proj-img-03{
+    margin-top: 5vh;
+    z-index: 0;
+}
+
+.Info{
+    width: 10vw;
+    height: 5vh;
+    font-size: 1rem;
+    font-style: italic;
+    color: #e7dfc6;
+    background-color: #5c6644;
+}
+.doel-title{
+    text-align: center;
+    font-size: 5rem;
+    color: #e7dfc6;
+    padding-top: 2vh;
+}
+
+.doel{
+    text-align: center;
+    font-size: 2rem;
+    color: #e7dfc6;
+    padding-top: 2vh;
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+.doel-1{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #e7dfc6;
+    padding-top: 2vh;
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+.rode-kruis{
+    margin-top: 3vh;
+    margin-left: 23vw;
+    height: 50vh;
+}
+
+.IFAW{
+    width: 40vw;
+    margin-top: 2vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.Wolf{
+    width: 40vw;
+    margin-top: 2vh;
+}
+
+.WN{
+    text-decoration: underline;
+    color: blue;
+}
+
+.WNF{
+    width: 30vw;
+    margin-top: 2vh;
+    margin-left: 32vw;
+    margin-right: 2vw;
+}
+
+.doel-2{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #e7dfc6;
+    padding-top: 2vh;
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+.p3-favoriete-doel{
+    width: 98.9vw;
+    height: 100vh;
+    background-color: #c05b2c;
+}
+
+.main-page{
+    width: 98.9vw;
+    height: 92.2vh;
+    background-color: aqua;
+    display: flex;
+}
+
+.first-main{
+    width: 70vw;
+    height: 92.2vh;
+    background-color: #4f5d2f;
+}
+
+.second-main{
+    width: 28.9vw;
+    height: 92.2vh;
+    background-image: url(./Images/side-bg.jpg);
+    background-size: 105%;
+}
+
+.M-Title{
+    font-size: 10rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 2vw;
+    margin-top: 10vh;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     background-image: url(./Images/bg-title.jpg);
+     background-size: 75%;
+}
+
+.M-Par{
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    color: #e7dfc6;
+}
+
+.second-motivatie{
+    width: 98.9vw;
+    height: 100vh;
+    background-image: url(./Images/motivatie-jandro-background.svg);
+    background-position-y: -8rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.jandro-motivatie{
+    padding-top: 15vh;
+    font-size: 8rem;
+    text-align: center;
+    letter-spacing: 1rem;
+    color: #d56f3e;
+}
+
+.motivatie-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 900;
+    padding-top: 6vh;
+    color: #d56f3e;
+}
+
+.clip-bg{
+    width: 98.9vw;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.463);
+}
+
+.main-doel{
+    width: 98.9vw;
+    height: 100vh;
+    background-image: url(./Images/doel-img.jpg);
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.doel-model{
+    border: white solid 5px;
+    height: 25vh;
+    width: 49vw;
+}
+
+.doel-text-01{
+    font-size: 5rem;
+    height: 19vh;
+    width: 32vw;
+    text-align: center;
+    padding-top: 6vh;
+    background-color: white;
+}
+
+.doel-text-02{
+    font-size: 5rem;
+    color: white;
+    height: 19vh;
+    width: 17vw;
+    text-align: center;
+    padding-top: 6vh;
+    margin-top: -25vh;
+    margin-left: 32vw;
+}
+
+.tcr-div{
+    width: 40vw;
+    height: 93vh;
+    background-color: #d56f3e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+span{
+    font-size: 4rem;
+    font-weight: 900;
+    color: greenyellow;
+}
+
+.T{
+    margin-top: 3vh;
+    margin-left: 16vw;
+}
+
+.C{
+    margin-top: 3vh;
+    margin-left: 8vw;
+}
+
+.R{
+    margin-top: 3vh;
+    margin-left: 8vw;
+}
+
+.ct{
+    color: green;
 }
