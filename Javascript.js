@@ -1,49 +1,121 @@
 var bgMusic = document.getElementById("bg-sound");
+
+bgMusic.volume = 0.1;
+bgMusic.play();
+
+
 var clickFX = document.getElementById("click");
 
-bgMusic.play();
-bgMusic.volume = 0.1;
-
 function FX(){
+    clickFX.volume = 0.1;
     clickFX.play();
-    bgMusic.volume = 1.0;
 }
 
-var img = document.getElementById('proj-img-01');
-var description = document.getElementById('proj-description01');
-
-function jp1i1() {
-    img.style.zIndex = "2";
-    description.style.zIndex = "-1";
+function jandro() {
+    document.getElementById('cv-image').style.zIndex = '2';
+    document.getElementById('cv-contact').style.zIndex = '-2';
+    document.getElementById('videopitch').style.zIndex = '-2';
+    document.getElementById('ervaring').style.zIndex = '-2';
+    document.getElementById('Opleiding').style.zIndex = '-2';
+    document.getElementById('vaardigheden').style.zIndex = '-2';
 }
 
-function jp1d1() {
-    description.style.zIndex = "2";
-    img.style.zIndex = "-1";
+function jandro1() {
+    document.getElementById('cv-contact').style.zIndex = '2';
+    document.getElementById('cv-image').style.zIndex = '-2';
+    document.getElementById('videopitch').style.zIndex = '-2';
+    document.getElementById('ervaring').style.zIndex = '-2';
+    document.getElementById('Opleiding').style.zIndex = '-2';
+    document.getElementById('vaardigheden').style.zIndex = '-2';
 }
 
-var img1 = document.getElementById('proj-img-02');
-var description1 = document.getElementById('proj-description02');
-
-function jp2i1() {
-    img1.style.zIndex = "2";
-    description1.style.zIndex = "-1";
+function jandro2() {
+    document.getElementById('videopitch').style.zIndex = '2';
+    document.getElementById('cv-image').style.zIndex = '-2';
+    document.getElementById('cv-contact').style.zIndex = '-2';
+    document.getElementById('ervaring').style.zIndex = '-2';
+    document.getElementById('Opleiding').style.zIndex = '-2';
+    document.getElementById('vaardigheden').style.zIndex = '-2';
 }
 
-function jp2d1() {
-    description1.style.zIndex = "2";
-    img1.style.zIndex = "-1";
+function jandro3() {
+    document.getElementById('ervaring').style.zIndex = '2';
+    document.getElementById('cv-image').style.zIndex = '-2';
+    document.getElementById('cv-contact').style.zIndex = '-2';
+    document.getElementById('videopitch').style.zIndex = '-2';
+    document.getElementById('Opleiding').style.zIndex = '-2';
+    document.getElementById('vaardigheden').style.zIndex = '-2';
 }
 
-var img2 = document.getElementById('proj-img-03');
-var description2 = document.getElementById('proj-description03');
-
-function jp3i1() {
-    img2.style.zIndex = "2";
-    description2.style.zIndex = "-1";
+function jandro4() {
+    document.getElementById('Opleiding').style.zIndex = '2';
+    document.getElementById('cv-image').style.zIndex = '-2';
+    document.getElementById('cv-contact').style.zIndex = '-2';
+    document.getElementById('videopitch').style.zIndex = '-2';
+    document.getElementById('ervaring').style.zIndex = '-2';
+    document.getElementById('vaardigheden').style.zIndex = '-2';
 }
 
-function jp3d1() {
-    description2.style.zIndex = "2";
-    img2.style.zIndex = "-1";
+function jandro5() {
+    document.getElementById('vaardigheden').style.zIndex = '2';
+    document.getElementById('Opleiding').style.zIndex = '-2';
+    document.getElementById('cv-image').style.zIndex = '-2';
+    document.getElementById('cv-contact').style.zIndex = '-2';
+    document.getElementById('videopitch').style.zIndex = '-2';
+    document.getElementById('ervaring').style.zIndex = '-2';
+}
+
+// junior
+function junior() {
+    document.getElementById('cv-imagejunior').style.zIndex = '2';
+    document.getElementById('cv-contact-junior').style.zIndex = '-2';
+    document.getElementById('videopitch-junior').style.zIndex = '-2';
+    document.getElementById('ervaring-junior').style.zIndex = '-2';
+    document.getElementById('Opleiding-junior').style.zIndex = '-2';
+    document.getElementById('vaardigheden-junior').style.zIndex = '-2';
+}
+
+function junior1() {
+    document.getElementById('cv-contact-junior').style.zIndex = '2';
+    document.getElementById('cv-imagejunior').style.zIndex = '-2';
+    document.getElementById('videopitch-junior').style.zIndex = '-2';
+    document.getElementById('ervaring-junior').style.zIndex = '-2';
+    document.getElementById('Opleiding-junior').style.zIndex = '-2';
+    document.getElementById('vaardigheden-junior').style.zIndex = '-2';
+}
+
+function junior2() {
+    document.getElementById('videopitch-junior').style.zIndex = '2';
+    document.getElementById('cv-imagejunior').style.zIndex = '-2';
+    document.getElementById('cv-contact-junior').style.zIndex = '-2';
+    document.getElementById('ervaring-junior').style.zIndex = '-2';
+    document.getElementById('Opleiding-junior').style.zIndex = '-2';
+    document.getElementById('vaardigheden-junior').style.zIndex = '-2';
+}
+
+function junior3() {
+    document.getElementById('ervaring-junior').style.zIndex = '2';
+    document.getElementById('cv-imagejunior').style.zIndex = '-2';
+    document.getElementById('cv-contact-junior').style.zIndex = '-2';
+    document.getElementById('videopitch-junior').style.zIndex = '-2';
+    document.getElementById('Opleiding-junior').style.zIndex = '-2';
+    document.getElementById('vaardigheden-junior').style.zIndex = '-2';
+}
+
+function junior4() {
+    document.getElementById('Opleiding-junior').style.zIndex = '2';
+    document.getElementById('cv-imagejunior').style.zIndex = '-2';
+    document.getElementById('cv-contact-junior').style.zIndex = '-2';
+    document.getElementById('videopitch-junior').style.zIndex = '-2';
+    document.getElementById('ervaring-junior').style.zIndex = '-2';
+    document.getElementById('vaardigheden-junior').style.zIndex = '-2';
+}
+
+function junior5() {
+    document.getElementById('vaardigheden-junior').style.zIndex = '2';
+    document.getElementById('Opleiding-junior').style.zIndex = '-2';
+    document.getElementById('cv-imagejunior').style.zIndex = '-2';
+    document.getElementById('cv-contact-junior').style.zIndex = '-2';
+    document.getElementById('videopitch-junior').style.zIndex = '-2';
+    document.getElementById('ervaring-junior').style.zIndex = '-2';
 }

@@ -12,6 +12,7 @@ html{
 
 .hpb{
     background-color: black;
+    scrollbar-color: red yellow;
 }
 
 *{
@@ -39,7 +40,7 @@ nav{
     border-bottom: 1vh solid #5c6644;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 100;
 }
 
 .port{
@@ -87,38 +88,17 @@ li:hover{
 
 .content{
     position: absolute;
-    left: 10vw;
-    top: 15vh;
-    width: 80vw;
-    height: 80vh;
+    left: 12vw;
+    top: 19vh;
+    width: 75vw;
+    height: 70vh;
     background-image: url(./Images/bg.jpg);
     background-size: 100%;
+    transition: all 3s ease;
 }
 
 .content:hover{
-    animation-name: hover;
-    animation-duration: 1.5s;
-    width: 85vw;
-    height: 85vh;
-    position: absolute;
-    left: 7vw;
-    top: 12vh;
-}
-
-@keyframes hover {
-    0%{
-        width: 80vw;
-        height: 80vh;
-    }
-    100%{
-        width: 85vw;
-        height: 85vh;
-        position: absolute;
-        left: 7vw;
-        top: 12vh;
-        background-image: url(./Images/bg.jpg);
-        background-size: 100%;
-    }
+    transform: scale(1.2);
 }
 
 .h1t{
@@ -200,6 +180,7 @@ li:hover{
     height: 100vh;
     background-color: #4f5d2f;
 }
+
 .p3{
     width: 98.9vw;
     height: 100vh;
@@ -248,7 +229,7 @@ li:hover{
     color: #e7dfc6;
     text-align: center;
     font-size: 8rem;
-    padding-top: 7vh;
+    padding-top: 3vh;
 }
 
 #junior{
@@ -413,13 +394,14 @@ li:hover{
 }
 
 .Info{
-    width: 10vw;
+    width: 8vw;
     height: 5vh;
     font-size: 1rem;
     font-style: italic;
     color: #e7dfc6;
     background-color: #5c6644;
 }
+
 .doel-title{
     text-align: center;
     font-size: 5rem;
@@ -632,4 +614,249 @@ span{
 
 .ct{
     color: green;
+}
+
+.cv{
+    width: 45vw;
+    height: 70vh;
+    background-color: rgba(33, 33, 33, 0.595);
+    background-size: cover;
+    border: 5px solid #d56f3e;
+    border-radius: 0 0 50px 50px;
+    margin-left: 5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cv-button{
+    height: 5.15vh;
+    width: 5.93vw;
+    background-color: #4f5d2f;
+    border: 0;
+    font-size: 1rem;
+    color: #e7dfc6;
+}
+
+.cv-button1{
+    height: 5.15vh;
+    width: 14vw;
+    background-color: #4f5d2f;
+    border: 0;
+    font-size: 1rem;
+    color: #e7dfc6;
+}
+
+.cv-button:hover, .cv-button1:hover{
+    background-color: #667b34;
+}
+
+.cv-nav{
+    width: 45vw;
+    height: 5.2vh;
+    background-color: #4f5d2f;
+    border-bottom: 5px solid #d56f3e;
+}
+
+#cv-image{
+    width: 45vw;
+    height: 64.4vh;
+    border-radius: 0 0 46px 46px;
+    z-index: 1;
+    position: absolute;
+    margin-top: 5.7vh;
+}
+
+#cv-imagejunior{
+    
+    height: 60vh;
+    border-radius: 0 0 46px 46px;
+    z-index: 1;
+    position: absolute;
+    margin-top: 5.7vh;
+}
+
+.contact-image, .email-image{
+    margin-top: 1vh;
+    width: 7vw;
+}
+
+#cv-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+    z-index: -1;
+    position: absolute;
+}
+
+
+#cv-contact-junior{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+    z-index: -1;
+    position: absolute;
+}
+
+.phone, .e-mail{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-tekst{
+    margin: 12vh 0 0 1vw;
+    color: #e7dfc6;
+}
+
+.contact-tekst1{
+    color: #e7dfc6;
+    margin: 5vh 0 0 1vw;
+}
+
+#videopitch{
+    margin-top: 12vh;
+    width: 45vw;
+    z-index: -1;
+    position: absolute;
+}
+
+#videopitch-junior{
+    margin-top: 15vh;
+    width: 35vw;
+    z-index: -2;
+    position: absolute;
+}
+
+#ervaring{
+    position: absolute;
+    z-index: -1;
+    margin-top: 10vh;
+}
+
+#ervaring-junior{
+    position: absolute;
+    z-index: -1;
+    margin-top: 10vh;
+}
+
+.ervaring-tekst, .ervaring-title, .ervaring-tekst1{
+    color: #e7dfc6;
+    width: 40vw;
+    margin-bottom: 2vh;
+}
+
+.sod-tekst, .sod-title{
+    color: #e7dfc6;
+    width: 40vw;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.ervaring-title, .sod-title{
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.ervaring-tekst1{
+    text-align: right;
+}
+
+#Opleiding{
+    z-index: -1;
+    position: absolute;
+    margin-top: 14vh;
+}
+
+#Opleiding-junior{
+    z-index: -1;
+    position: absolute;
+    margin-top: 14vh;
+}
+
+#vaardigheden{
+    z-index: -1;
+    position: absolute;
+    margin-top: 14vh;
+}
+
+#vaardigheden-junior{
+    z-index: -1;
+    position: absolute;
+    margin-top: 14vh;
+}
+
+.projecten{
+    width: 30vw;
+    height: 34.5vw;
+    background-color: #5c6644;
+    margin-left: 9vw;
+    border: 5px solid #d56f3e;
+    border-radius: 50px;
+}
+
+.template-portofolio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.proj-tekst{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    color: #e7dfc6;
+}
+
+.magic-image{
+    margin-bottom: 2vh;
+    margin-left: .75vw;
+    border-radius: 2rem;
+}
+
+.proj-dis{
+    text-align: center;
+    width: 25vw;
+    margin-left: 2.5vw;
+    color: #e7dfc6;
+}
+
+.proj-button{
+    margin-top: 6.3vh;
+    width: 29.99vw;
+    height: 7vh;
+    border-radius: 0 0 48px 48px;
+    border: 0;
+    background-color: #5c6644;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #e7dfc6;
+}
+.proj-button-junior{
+    margin-top: 6.3vh;
+    width: 29.99vw;
+    height: 7vh;
+    border-radius: 0 0 48px 48px;
+    border: 0;
+    background-color: #5c6644;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #e7dfc6;
+}
+
+.proj-button:hover, .proj-button-junior:hover{
+    background-color: #4f5d2f;
+}
+
+mark{
+    background-color: aqua;
+    color: rgb(40, 40, 40);
+}
+
+mark:hover{
+    background-color: rgb(29, 208, 208);
 }

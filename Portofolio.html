@@ -1,9 +1,4 @@
-<!--
-    Jandro = Klaar
-    Junior = Niet Klaar 
-    Dean = Niet Klaar
--->
-
+<!--Deze is onze Portofolio page van -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,96 +33,224 @@
         </ul>
     </nav>
 
-    <div class="p1">
-        <p class="pt">Portofolio</p>
-        <p class="hu">In deze pagina ga je onze projecten zien die we hebt in periode 1 gemaakt.</p>
-    </div>
+        <!--Deze is de eerste pagina-->
+        <div class="p1">
+            <p class="pt">Portofolio</p>
+            <p class="hu">In deze pagina ga je onze projecten zien die we hebt in periode 1 gemaakt.</p>
+        </div>
+    
+        <!--Deze is de tweede pagina-->
+        <div class="p2">
+            <h1 id="jandro">Portofolio Van Jandro</h1>
 
-    <div class="p2">
-        <h1 id="jandro">Portofolio Van Jandro</h1>
+            <!--Deze is main div binnen pagina 2-->
+            <div class="template-portofolio">
 
-        <div class="projall">
-            <div class="proj1">
-                <h1 class="projt">Project 1: Magic</h1>
-                <img src="./Images/magic.png" width="99%" id="proj-img-01">
-                <p id="proj-description01">Mijn inspiratie voor project 1 was magie, 
-                    ik was altijd bezig met goocheltrucs en toen ik de code ontdekte 
-                    waarmee je afbeeldingen kunt verbergen, wist ik dat ik een website 
-                    moest maken met de code erin.
-                </p>
-                <div>
-                    <button class="Info" onclick="jp1i1()">Image</button>
-                    <button class="Info" onclick="jp1d1()">Description</button>
-                </div>
-                
-                <ul class="btn">
-                    <li class="btn-li"><a class="btn-a" href="./Projects/Jandro/Opdracht_6.3 Javascript/Index.html" target="_blank" onclick="FX()">Click</a></li>
-                </ul>
-            </div>
+                <!--Deze is de div voor CV-->
+                <div class="cv">
 
-            <div class="proj2">
-                <h1 class="projt">Project 2: Secret Car Page</h1>
-                <img src="./Images/bc.png" width="99%" id="proj-img-02">
-                <p id="proj-description02">Mijn inspiratie voor project 2 was auto's. 
-                    Ik heb altijd van auto's gehouden en toen ik de kans kreeg om een 
-                    website te maken, maakte ik deze over auto's.
-                </p>
-                <div>
-                    <button class="Info" onclick="jp2i1()">Image</button>
-                    <button class="Info" onclick="jp2d1()">Description</button>
-                </div>
-                <ul class="btn" onclick="click()">
-                    <li class="btn-li"><a class="btn-a" href="./Projects/Jandro/Opdracht_9.1/Index.html" target="_blank" onclick="FX()">Click</a></li>
-                </ul>
+                    <!--Deze is de nav van de cv-->
+                    <div class="cv-nav">
+                        <button class="cv-button" onclick="jandro()">Foto</button>
+                        <button class="cv-button" onclick="jandro1()">Contact</button>
+                        <button class="cv-button" onclick="jandro2()">Videopitch</button>
+                        <button class="cv-button" onclick="jandro3()">Ervaring</button>
+                        <button class="cv-button" onclick="jandro4()">Opleiding</button>
+                        <button class="cv-button1" onclick="jandro5()">Programmeer Vaardigheden</button>
+                    </div>
+    
+                    <img src="./Images/IMG_2091.jpeg" id="cv-image">
+    
+                    <!--Deze is mijn contact gegevens-->
+                    <div id="cv-contact">
+    
+                        <div class="phone">
+                            <img src="./Images/cell-phone-phone.gif" loop = "infinite" class="contact-image">
+                            <h1 class="contact-tekst"><mark>+31 6 87467897</mark></h1>
+                        </div>
+    
+                        <div class="e-mail">
+                            <img src="./Images/e-mail.gif" loop = "infinite" class="email-image">
+                            <h1 class="contact-tekst1"><mark>9020498@student.zadkine.nl</mark></h1>
+                        </div>
+    
+                    </div>
+    
+                    <!--hier staat mijn videopitch-->
+                    <video src="./Images/Ontwerp.mp4" id="videopitch" controls></video>
+    
+                    <div id="ervaring">
+    
+                        <h1 class="ervaring-title">Werk Ervaring</h1>
+                        <h2 class="ervaring-tekst">Stage Bij TV Direct<br><br>
+                            1 Nov 2020 - 1 Dec 2020 <br>
+                            214 Franklin D. Rooseveltweg, Willemstad, Curaçao <br>
+                        </h2>
+                        <hr>
+                        <h2 class="ervaring-tekst1">BrightClub <br><br>
+                            7 Jul 2023 - 14 Jul 2023<br>
+                            Saliña Galleries Unit 202, Willemstad, Curaçao <br>
+                        </h2>
+                        <hr>
+                        <h2 class="ervaring-tekst">WAW Burger <br><br>
+                            Okt 2023 - Nu <br>
+                            Zuidplein 96 3083 CW Rotterdam <br>
+                        </h2>
+    
+                    </div>
+    
+                    <!--hier staat in het kort iets over wat een software kan -->
+                    <div id="Opleiding">
+                        <h1 class="sod-title">Software Developer</h1>
+    
+                        <h2 class="sod-tekst">Softwareontwikkeling is het proces van het creëren, ontwerpen, programmeren, testen en onderhouden van 
+                            softwaretoepassingen, frameworks of andere softwarecomponenten. Het omvat een systematische en georganiseerde 
+                            aanpak om software te bouwen die voldoet aan specifieke vereisten of bepaalde problemen oplost. 
+                            Softwareontwikkeling is een dynamisch en voortdurend evoluerend vakgebied, en het speelt een cruciale rol in 
+                            verschillende sectoren, variërend van zakelijke en financiële dienstverlening tot gezondheidszorg en entertainment.
+                        </h2>
+                    </div>
+    
+                    <!--hier staat iets over mijn vaardigen-->
+                    <div id="vaardigheden">
+                        <!---->
+                        <h1 class="sod-title">Programmeer Vaardigheden</h1>
+                        <h2 class="sod-tekst">Ik beschik over uitgebreide ervaring met HTML en CSS, terwijl ik me in de beginfase van mijn vaardigheid in JavaScript bevind,
+                            PHP en SQL, waaruit blijkt dat we ons inzetten voor voortdurend leren en de ontwikkeling van vaardigheden in divers programmeren
+                            talen en technologieën.
+                        </h2>
+    
+                    </div>
+    
+                 </div>
+    
+                 <div class="projecten">
+
+                    <h1 class="proj-tekst">Project</h1>
+
+                    <img src="./Images/magic.png" width="95%" class="magic-image">
+
+                    <p class="proj-dis">Mijn inspiratie voor deze project was magie, 
+                        ik was altijd bezig met goocheltrucs en toen ik de code ontdekte 
+                        waarmee je afbeeldingen kunt verbergen, wist ik dat ik een website 
+                        moest maken met de code erin.
+                    </p>
+
+                    <!--Deze is een button met een link-->
+                    <button class="proj-button"><a href="./Projects/Jandro/Opdracht_6.3 Javascript/" target="_blank">Klik Hier</a></button>
+    
+                 </div>
+
             </div>
-            <div class="proj3">
-                <h1 class="projt">Project 3: Travelly</h1>
-                <img src="./Images/tr.png" width="99%" id="proj-img-03">
-                <p id="proj-description03">In project 3 was het niet mijn idee. 
-                    De taak was om de website te maken zoals op de foto, maar ik 
-                    heb mijn eigen effecten toegevoegd.
-                </p>
-                <div>
-                    <button class="Info" onclick="jp3i1()">Image</button>
-                    <button class="Info" onclick="jp3d1()">Description</button>
-                </div>
-                <ul class="btn">
-                    <li class="btn-li"><a class="btn-a" href="./Projects/Jandro/Travelly/Index.html" target="_blank" onclick="FX()">Click</a></li>
-                </ul>
+    
+        </div>
+    
+        
+        <!--junior pagina 3*-->
+        
+        <div class="p3">
+            
+            <h1 id="junior">Portofolio Van Junior</h1>
+
+            <!--Deze is main div binnen pagina 3-->
+            <div class="template-portofolio">
+
+                <!--Deze is de div voor mijn CV-->
+                <div class="cv">
+
+                    <!--Deze is de nav van de mijn cv-->
+                    <div class="cv-nav">
+                        <button class="cv-button" onclick="junior()">Foto</button>
+                        <button class="cv-button" onclick="junior1()">Contact</button>
+                        <button class="cv-button" onclick="junior2()">Videopitch</button>
+                        <button class="cv-button" onclick="junior3()">Ervaring</button>
+                        <button class="cv-button" onclick="junior4()">Opleiding</button>
+                        <button class="cv-button1" onclick="junior5()">Programmeer Vaardigheden</button>
+                    </div>
+                     <!--images voegen bij mijn balkjes-->
+                    <img src="./Images/junior.JPG" id="cv-imagejunior">
+    
+                    <!--`contact gegevens-->
+                    <div id="cv-contact-junior">
+
+    
+                        <div class="e-mail">
+                            <img src="./Images/e-mail.gif" loop = "infinite" class="email-image">
+                            <h1 class="contact-tekst1"><mark>9021948@student.zadkine.nl</mark></h1>
+                        </div>
+    
+                    </div>
+    
+                    <!--video pitch-->
+                    <video src="./Images/junior video Pitch.mov" id="videopitch-junior" controls></video>
+    
+                    <div id="ervaring-junior">
+    
+                        <h1 class="ervaring-title">Werk Ervaring</h1>
+                        <h2 class="ervaring-tekst">Vezet<br><br>
+                            2 JULI  2019 - 4 OKT 2020 <br>
+                            In warmehuizen, Alkmaar <br>
+                        </h2>
+                        <hr>
+                        <h2 class="ervaring-tekst1">KPN SALES <br><br>
+                            7 OKT 2023 - 3 JAN 2024<br>
+                            Bij Uitblinqers, Rotterdam <br>
+                        </h2>
+                        <hr>
+                        
+    
+                    </div>
+
+                    <!--info over opleiding-->
+    
+                    <div id="Opleiding-junior">
+                        <h1 class="sod-title">Software Developer</h1>
+    
+                        <h2 class="sod-tekst">
+                            Een softwareontwikkelaar is iemand die programma's maakt voor computers. We bedenken, schrijven en zorgen ervoor dat de software goed werkt. 
+                            Het kan gaan om apps, websites of andere soorten computerprogramma's. 
+                            Ze werken vaak samen met andere klasgenoten en buiten de klas, zoals ontwerpers, om ervoor te zorgen dat de software doet wat het moet doen. 
+                            Ze gebruiken speciale talen en tools om de programma's te maken en zorgen ervoor dat alles goed werkt en veilig is. Ook lossen ze problemen op en zorgen ze ervoor dat de software up-to-date blijft.
+                        </h2>
+                    </div>
+    
+                    <!--dit is voor mijn stuk over mijn ervaringen-->
+                    <div id="vaardigheden-junior">
+                        
+                        <h1 class="sod-title">Programmeer Vaardigheden</h1>
+                        <h2 class="sod-tekst">
+                            Ik beschik over enige ervaring met HTML, PHP, JavaScript en SQL. 
+                            Momenteel bevind ik me echter nog in de beginfase van mijn ontwikkeling op dit gebied, waardoor mijn kennis beperkt is. 
+                            Momenteel volg ik een opleiding om mijn vaardigheden verder te ontwikkelen en uiteindelijk meer ervaring op te doen in het vakgebied van softwareontwikkeling.
+                        </h2>
+    
+                    </div>
+    
+                 </div>
+    
+                 <div class="projecten">
+
+                    <h1 class="proj-tekst">Project</h1>
+
+                    <img src="./Images/JN webiste .png" width="95%" class="magic-image">
+
+                    <p class="proj-dis">
+                        favoriete website / Project die ik tot nu toe hebt gemaakt en waar ik super trots op ben.
+                    </p>
+
+                    <!--Deze is een button met een link naar me project-->
+                    <button class="proj-button-junior"><a href="./Projects/Junior/p1-Project_OuderAvond/Junior.html" target="_blank">KlIK HIER</a></button>
+    
+                 </div>
+
             </div>
+    
         </div>
 
-    </div>
+    
+        </div> 
 
-    <div class="p3">
-        <h1 id="junior">Portofolio Van Junior</h1>
-
-        <div class="projall">
-            <div class="proju1">
-                <h1 class="projt">Project 1</h1>
-                <img src="./Images/Junior1.png" width="350vw">
-                <ul class="btn">
-                    <li class="btnj-li"><a class="btn-a" href="./Projects/Junior/p1-Project_OuderAvond/" target="_blank" onclick="FX()">KLIK HIER</a></li>
-                </ul>
-            </div>
-            <div class="proju2">
-                <h1 class="projt">Project 2</h1>
-                <img src="./Images/junior2.png" width="350vw">
-                <ul class="btn" onclick="click()">
-                    <li class="btnj-li"><a class="btn-a" href="./Projects/Junior/Travelly/Travelly/" target="_blank" onclick="FX()">KLIK HIER</a></li>
-                </ul>
-            </div>
-            <div class="proju3">
-                <h1 class="projt">Project 3</h1>
-                <img src="./Images/proj-junior.png" width="350vw">
-                <ul class="btn">
-                    <li class="btnj-li"><a class="btn-a" href="./Projects/Junior/Opdracht_1.2/" target="_blank" onclick="FX()">KLIK HIER</a></li>
-                </ul>
-            </div>
-        </div>
-
-    </div> 
-
+    <!--Dit is de footer-->
     <footer class="footer-portofolio">
         <h3 class="footer-h3">© Copyright 2023 JGD. All rights reserved.</h3>
     </footer>
