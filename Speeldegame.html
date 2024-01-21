@@ -1,9 +1,4 @@
-<!--
-    Jandro = Niet Klaar
-    Junior = Niet Klaar 
-    Dean = Niet Klaar
--->
-
+<!--dit is de speel de game pagina-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,14 +11,12 @@
 
 <body>
 
-    <audio id="bg-sound" controls autoplay>
-        <source src="./Music-FX/just-relax.mp3">
-    </audio>
-
+    <!--dit is de soundfx voor button-->
     <audio id="click">
         <source src="./Music-FX/game-click.wav">
     </audio>
 
+    <!--dit is de navegatie balk-->
     <nav>
         <h1 class="logo">JGD</h1>
         <ul>
@@ -38,10 +31,42 @@
         </ul>
     </nav>
 
+    <!--dit is de eerste pagina-->
     <div class="p1-de-game">
+
+        <h1 class="Game-Title">Speel de Games</h1>
 
     </div>
 
+    <!--dit is de tweede pagina-->
+    <div class="p2-de-game">
+
+        <h1 class="p2-Game-Title">Games</h1>
+
+        <!--dit is een div met onze games-->
+        <div class="game-main">
+
+            <div class="game-jandro">
+                <h1 class="gametitle">Sky Siege: Citadel Havoc (Jandro)</h1>
+                <img src="./Images/Havoc.png" class="Havoc-image">
+                <button class="game-jandro-button"><a href="./Projects/Jandro/JavScript Game/index.html" class="game-jandro-link" target="_blank">Spelen</a></button>
+            </div>
+            <div class="game-junior">
+                <h1 class="gametitle-other">Snake Game (Junior)</h1>
+                <img src="./Images/snake.png" class="Havoc-image">
+                <button class="game-junior-button"><a href="./Projects/Junior/Snake Game/Game.html" class="game-jandro-link" target="_blank">Spelen</a></button>
+            </div>
+            <div class="game-dean">
+                <h1 class="gametitle-other">Typing Speed Test (Dean)</h1>
+                <img src="./Images/typing game.png" class="Havoc-image">
+                <button class="game-dean-button"><a href="./Projects/Dean/game/index 1.html" class="game-jandro-link" target="_blank">Spelen</a></button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--dit is de foooter-->
     <footer class="footer-portofolio">
         <h3 class="footer-h3">© Copyright 2023 JGD. All rights reserved.</h3>
     </footer>

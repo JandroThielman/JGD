@@ -1,30 +1,28 @@
-<!--
-    Jandro = Klaar
-    Junior = Niet Klaar 
-    Dean = Niet Klaar
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta-tags voor karaktercodering en viewport-instellingen -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Koppeling naar extern stylesheet en favicon -->
     <link rel="stylesheet" href="Style.css">
     <link rel="shortcut icon" href="./Images/scroll.svg" type="image/x-icon">
+
+    <!-- Paginatitel -->
     <title>Persoonlijke Motivatie</title>
 </head>
 
 <body>
 
-    <audio id="bg-sound" controls autoplay>
-        <source src="./Music-FX/just-relax.mp3">
-    </audio>
-
+    <!-- Audio-element voor klikgeluid -->
     <audio id="click">
         <source src="./Music-FX/game-click.wav">
     </audio>
 
+    <!-- Navigatiesectie -->
     <nav>
+        <!-- Logo en navigatielinks -->
         <h1 class="logo">JGD</h1>
         <ul>
             <li><a href="Index.html">Home</a></li>
@@ -38,8 +36,10 @@
         </ul>
     </nav>
 
+    <!-- Hoofdpaginasectie -->
     <div class="main-page">
         <div class="first-main">
+            <!-- Titel en introductieparagraaf -->
             <h1 class="M-Title">Persoonlijke Motivatie</h1>
             <p class="M-Par">Dit is de persoonlijke motivatiepagina van Jandro, Junior en Dean.</p>
         </div>
@@ -47,10 +47,12 @@
         <div class="second-main"></div>
     </div>
 
+    <!-- Jandro's Motivatiesectie -->
     <div class="second-motivatie">
         <h1 class="jandro-motivatie">Jandro's Motivatie</h1>
 
         <div class="clip-bg">
+            <!-- Jandro's motivatietekst -->
             <pre class="motivatie-text">
                 Mijn motivatie is om mijn beste zelf te zijn om mijn vaardigheden te blijven verbeteren
                 en om nuttig te zijn voor de wereld, is mijn manier om nuttig te zijn voor de wereld via computers.
@@ -64,10 +66,49 @@
 
     </div>
 
+    <!-- Dean's Motivatiesectie -->
+    <div class="second-motivatie-dean">
+        <h1 class="jandro-motivatie">Dean's Motivatie</h1>
+
+        <div class="clip-bg">
+            <!-- Dean's motivatietekst -->
+            <pre class="motivatie-text">
+                Mijn motivatie is om uiteindelijk een succesvol leven te hebben,
+                 en gelukkig te wonen in een huis met een gezin
+    
+                3 dingen motiveren mij elke dag
+                -De Eerste is succesvol te zijn
+                -De Tweede is om later gelukkig te zijn
+                -De Derde is dat ik iedereen in mijn omgeving kan laten zien wat ik dan allemaal heb bereikt
+            </pre>
+        </div>
+    </div>
+
+    <!-- Junior's Motivatiesectie -->
+    <div class="second-motivatie-junior">
+        <h1 class="jandro-motivatie">Junior Motivatie</h1>
+    
+        <div class="clip-bg">
+            <!-- Junior's motivatietekst -->
+            <pre class="motivatie-text">
+                Mijn motivatie is om RIJK te worden.
+                 en gelukkig te zijn met mijn familie en geld!
+        
+                3 dingen motiveren mij elke dag
+                -De Eerste is succesvol te zijn
+                -De Tweede is om later gelukkig te zijn
+                -De Derde is dat ik iedereen in mijn omgeving kan laten zien wat ik dan allemaal heb bereikt
+            </pre>
+        </div>
+    </div>
+
+    <!-- Footergedeelte -->
     <footer class="footer-portofolio">
+        <!-- Copyrightinformatie -->
         <h3 class="footer-h3">© Copyright 2023 JGD. All rights reserved.</h3>
     </footer>
 
+    <!-- Inclusie van JavaScript-bestand -->
     <script src="Javascript.js"></script>
 </body>
 </html>

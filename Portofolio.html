@@ -11,14 +11,10 @@
 
 <body>
 
-    <audio id="bg-sound" controls autoplay>
-        <source src="./Music-FX/just-relax.mp3">
-    </audio>
-
     <audio id="click">
         <source src="./Music-FX/game-click.wav">
     </audio>
-
+    <!--Deze is de navigatebar-->
     <nav>
         <h1 class="logo">JGD</h1>
         <ul>
@@ -137,7 +133,7 @@
                     </p>
 
                     <!--Deze is een button met een link-->
-                    <button class="proj-button"><a href="./Projects/Jandro/Opdracht_6.3 Javascript/" target="_blank">Klik Hier</a></button>
+                    <button class="proj-button" onclick="FX()"><a href="./Projects/Jandro/Opdracht_6.3 Javascript/Index.html" target="_blank">KLIK HIER</a></button>
     
                  </div>
 
@@ -156,10 +152,10 @@
             <div class="template-portofolio">
 
                 <!--Deze is de div voor mijn CV-->
-                <div class="cv">
+                <div class="cv-junior">
 
                     <!--Deze is de nav van de mijn cv-->
-                    <div class="cv-nav">
+                    <div class="cv-nav-junior">
                         <button class="cv-button" onclick="junior()">Foto</button>
                         <button class="cv-button" onclick="junior1()">Contact</button>
                         <button class="cv-button" onclick="junior2()">Videopitch</button>
@@ -184,6 +180,7 @@
                     <!--video pitch-->
                     <video src="./Images/junior video Pitch.mov" id="videopitch-junior" controls></video>
     
+                    <!--werk ervaring -->
                     <div id="ervaring-junior">
     
                         <h1 class="ervaring-title">Werk Ervaring</h1>
@@ -214,7 +211,7 @@
                         </h2>
                     </div>
     
-                    <!--dit is voor mijn stuk over mijn ervaringen-->
+                    <!--dit is voor mijn stuk over mijn ervaringen over progammeren-->
                     <div id="vaardigheden-junior">
                         
                         <h1 class="sod-title">Programmeer Vaardigheden</h1>
@@ -228,7 +225,7 @@
     
                  </div>
     
-                 <div class="projecten">
+                 <div class="projecten-junior">
 
                     <h1 class="proj-tekst">Project</h1>
 
@@ -239,7 +236,7 @@
                     </p>
 
                     <!--Deze is een button met een link naar me project-->
-                    <button class="proj-button-junior"><a href="./Projects/Junior/p1-Project_OuderAvond/Junior.html" target="_blank">KlIK HIER</a></button>
+                    <button class="proj-button-junior" onclick="FX()"><a href="./Projects/Junior/p1-Project_OuderAvond/Junior.html" target="_blank">KLIK HIER</a></button>
     
                  </div>
 
@@ -247,7 +244,109 @@
     
         </div>
 
+        <!--Dean pagina-->
+        <div class="p4">
+            
+            <h1 id="junior">Portofolio Van Dean</h1>
+
+            <!--Deze is main div binnen pagina 3-->
+            <div class="template-portofolio">
+
+                <!--Deze is de div voor mijn CV-->
+                <div class="cv-Dean">
+
+                    <!--Deze is de nav van de mijn cv-->
+                    <div class="cv-nav-Dean">
+                        <button class="cv-button" onclick="dean()">Foto</button>
+                        <button class="cv-button" onclick="dean1()">Contact</button>
+                        <button class="cv-button" onclick="dean2()">Videopitch</button>
+                        <button class="cv-button" onclick="dean3()">Ervaring</button>
+                        <button class="cv-button" onclick="dean4()">Opleiding</button>
+                        <button class="cv-button1" onclick="dean5()">Programmeer Vaardigheden</button>
+                    </div>
+                     <!--images voegen bij mijn balkjes-->
+                    <img src="./Images/fotodean.jpg" id="cv-imagedean">
     
+                    <!--`contact gegevens-->
+                    <div id="cv-contact-dean">
+
+    
+                        <div class="e-mail">
+                            <img src="./Images/e-mail.gif" loop = "infinite" class="email-image">
+                            <h1 class="contact-tekst1"><mark>9022314@student.zadkine.nl</mark></h1>
+                        </div>
+    
+                    </div>
+    
+                    <!--video pitch-->
+                    <video src="./Images/weer.mp4" id="videopitch-dean" controls></video>
+    
+                    <!--werk ervaring -->
+                    <div id="ervaring-dean">
+    
+                        <h1 class="ervaring-title">Werk Ervaring</h1>
+                        <h2 class="ervaring-tekst">Aldi<br><br>
+                           achter de kassa gezeten <br>
+                            In Spijkenisse <br>
+                        </h2>
+                        <hr>
+                        <h2 class="ervaring-tekst1">stage bij Intertoys <br><br>
+                            Achter de kassa vakkenvullen<br>
+                            In Spijkenisse <br>
+                        </h2>
+                        <hr>
+                        
+    
+                    </div>
+
+                    <!--info over opleiding-->
+    
+                    <div id="Opleiding-dean">
+                        <h1 class="sod-title">Software Developer</h1>
+    
+                        <h2 class="sod-tekst">
+                            Softwareontwikkelaars zijn verantwoordelijk voor het creëren, schrijven en optimaliseren van computerprogramma's,
+                             variërend van apps tot websites, en werken nauw samen met collega's zoals ontwerpers om ervoor te zorgen dat de software effectief functioneert.
+                              Ze maken gebruik van gespecialiseerde talen en tools, 
+                              garanderen de veiligheid en werking van de software, en blijven actief bezig met probleemoplossing en het bijwerken van de programma's.
+                        </h2>
+                    </div>
+    
+                    <!--dit is voor mijn stuk over mijn ervaringen over progammeren-->
+                    <div id="vaardigheden-dean">
+                        
+                        <h1 class="sod-title">Programmeer Vaardigheden</h1>
+                        <h2 class="sod-tekst">
+                            
+                        Ik weet een beetje van HTML, PHP, JavaScript en SQL. 
+                        Maar ik ben nog in de basics fase en ken niet alles. 
+                        Ik volg nu een opleiding om beter te worden en meer te leren over softwareontwikkeling.
+                        </h2>
+    
+                    </div>
+    
+                 </div>
+    
+                 <div class="projecten-Dean">
+
+                    <h1 class="proj-tekst">Project</h1>
+
+                    <img src="./Images/rock.png" width="95%" class="project-image-dean">
+
+                    <p class="proj-dis">
+                        favoriete website / Project die ik tot nu toe hebt gemaakt en waar ik super trots op ben.
+                    </p>
+
+                    <!--Deze is een button met een link naar me project-->
+                    <button class="proj-button-dean" onclick="FX()" href><a href="./Projects/Dean/rock paper scissors/index.html" target="_blank">KLIK HIER</a></button>
+    
+                 </div>
+
+            </div>
+    
+        </div>
+
+
         </div> 
 
     <!--Dit is de footer-->

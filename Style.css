@@ -1,8 +1,16 @@
+/*aangepast lettertype*/
 @font-face {
     font-family: Japan;
     src: url(./Fonts/Harukaze.otf);
 }
 
+/*aangepast lettertype*/
+@font-face {
+    font-family: GodofWar;
+    src: url(./Fonts/GODOFWAR.TTF);
+}
+
+/*html met paddin margin width en height op 0*/
 html{
     width: 0;
     height: 0;
@@ -10,15 +18,17 @@ html{
     padding: 0;
 }
 
+/*hpb is de home body met background-color black*/
 .hpb{
     background-color: black;
-    scrollbar-color: red yellow;
 }
 
+/*de ster staat voor alles met een margin 0*/
 *{
     margin: 0;
 }
 
+/*dit is de nav logo*/
 .logo{
     font-family: Japan;
     letter-spacing: .5rem;
@@ -29,6 +39,7 @@ html{
     margin-right: 2vw;
 }
 
+/* dit is de nav */
 nav{
     width: 98.9vw;
     height: 7vh;
@@ -78,14 +89,16 @@ li:hover{
     background-color: #d56f3e;
 }
 
+/* Algemene achtergrondstijlen voor de hele pagina */
 .bg{
     margin: 0;
     width: 98.9vw;
-    height: 91.5vh;
+    height: 100vh;
     filter: blur(10px);
     z-index: 1;
 }
 
+/* Stijlen voor de contentsectie */
 .content{
     position: absolute;
     left: 12vw;
@@ -97,15 +110,18 @@ li:hover{
     transition: all 3s ease;
 }
 
+/* Vergroot de content bij hover */
 .content:hover{
     transform: scale(1.2);
 }
 
+/* Stijlen voor verschillende tekstsecties */
 .h1t{
     color: #e7dfc6;
     font-size: 10rem;
     text-align: center;
 }
+
 
 .pt{
     font-size: 15rem;
@@ -151,6 +167,7 @@ li:hover{
     padding: 0 2vw 0 2vw;
 }
 
+/* Stijlen voor een specifieke sectie met een unieke achtergrond */
 .hu{
     background-image: url(./Images/wb.png); 
     background-repeat: repeat; 
@@ -168,11 +185,15 @@ li:hover{
     -webkit-font-smoothing: antialiased; 
 }
 
+/* Stijlen voor verschillende pagina-onderdelen (p1, p2, p3, p4) */
 .p1{
     width: 98.9vw;
-    height: 92.2vh;
+    height: 100vh;
     background-image: url(./Images/bw.png);
     background-size: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .p2{
@@ -187,44 +208,334 @@ li:hover{
     background-color: #d56f3e;
 }
 
-.p1-favo-game{
-    width: 98.9vw;
-    height: 100vh;
-    background-color: #d56f3e;
-}
-
-.p1-uitleg{
+.p4{
     width: 98.9vw;
     height: 100vh;
     background-color: #4f5d2f;
 }
 
+/* Stijlen voor de favoriete game-sectie */
+.p1-favo-game{
+    width: 98.89vw;
+    height: 100vh;
+    background-image: url(Images/favo-game.jpg);
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stijlen voor de game-fav-sectie */
+.game-fav{
+    width: 98.89vw;
+    height: 100vh;
+    background-image: url(./Images/3d-render-futuristic-blank-clean-stage-background.jpg);
+    background-size: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Stijlen voor de game-titel in de favoriete game-sectie */
+.Favoriete-Game-Title{
+    background-image: url(./Images/anime-style-galaxy-background.jpg);
+    background-position-y: 200px;
+    background-size: 100%;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-transform: uppercase;  
+    font-size: 10rem;
+}
+
+/* vergelijkbare stijlen voor andere secties en elementen */
+.Favoriete-Game-title{
+    color: gold;
+    text-transform: uppercase;  
+    letter-spacing: .5rem;
+    font-size: 5rem;
+    font-family: GodofWar;
+    margin-top: 10vh;
+}
+
+/* Stijlen voor een afbeelding in de favoriete game-sectie */
+.fav-img{
+    width: 40vw;
+    border: 5px solid gold;
+    border-radius: 2rem;
+}
+
+/* Stijlen voor de eerste uitlegsectie */
+.p1-uitleg{
+    width: 98.9vw;
+    height: 100vh;
+    background-image: url(Images/fantasy-water-representation.jpg);
+    background-position-y: 2rem;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stijlen voor de tweede uitlegsectie */
+.p2-uitleg{
+    width: 98.9vw;
+    height: 100vh;
+    background-image: url(Images/Havoc.png);
+    background-position-y: -8rem;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stijlen voor de derde uitlegsectie */
+.p3-uitleg{
+    width: 98.9vw;
+    height: 100vh;
+    background-image: url(Images/Snake_OG-logo.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stijlen voor de tekst in de tweede uitlegsectie */
+.p2-text{
+    width: 90%;
+    text-align: center;
+    margin-top: 22vh;
+    font-family: GodofWar;
+    color: gold;
+    background-color: rgba(0, 0, 0, 0.626);
+}
+
+/* Stijlen voor de tekst in de derde uitlegsectie */
+.p3-text{
+    width: 90%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(248, 248, 248);
+    background-color: rgba(38, 255, 0, 0.338);
+}
+
+/* Stijlen voor de vierde uitlegsectie */
+.p4-uitleg{
+    width: 98.9vw;
+    height: 100vh;
+    background-image: url(Images/typing-games.webp);
+    background-size: 125%;
+    background-position-x: -12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Stijlen voor de tekst in de vierde uitlegsectie */
+.p4-text{
+    width: 90%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.626);
+}
+
+/* Stijlen voor de titel van de uitlegsectie */
+.Uitleg-Game-Title{
+    background-image: url(./Images/anime-style-galaxy-background.jpg);
+    background-position-y: 95rem;
+    background-size: 20%;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    text-transform: uppercase;  
+    font-size: 8rem;
+    -webkit-text-stroke: goldenrod .2rem;
+}
+
+/* Stijlen voor de eerste sectie van het deel van het spel */
 .p1-de-game{
     width: 98.9vw;
     height: 100vh;
-    background-color: #d56f3e;
+    background-image: url(./Images/bg1.jpg);
+    background-position-y: 50rem;
+    background-size: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Stijlen voor de tweede sectie van het deel van het spel */
+.p2-de-game{
+    width: 98.9vw;
+    height: 100vh;
+    background-image: url(./Images/game-bg.jpg);
+    background-position-y: -8rem;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+/* Stijlen voor de titel van de tweede sectie van het deel van het spel */
+.p2-Game-Title{
+    margin-top: 2vh;
+    font-size: 10rem;
+    color: gold;
+}
+
+/* Stijlen voor het hoofdgedeelte van het spel */
+.game-main{
+    position: absolute;
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* Stijlen voor specifieke game-secties (game-jandro, game-junior, game-dean) */
+.game-jandro{
+    width: 28vw;
+    height: 60vh;
+    background-color: rgb(57, 0, 80);
+    border: 5px solid rgb(100, 24, 130);
+    border-radius: 10%;
+}
+
+.game-junior{
+    width: 28vw;
+    height: 60vh;
+    margin-left: 5vw;
+    border-radius: 10%;
+    background-color: rgb(57, 0, 80);
+    border: 5px solid rgb(100, 24, 130);
+    border-radius: 10%;
+}
+
+.game-dean{
+    width: 28vw;
+    height: 60vh;
+    margin-left: 5vw;
+    border-radius: 10%;
+    background-color: rgb(57, 0, 80);
+    border: 5px solid rgb(100, 24, 130);
+    border-radius: 10%;
+}
+
+/* Stijlen voor de titel van het spel */
+.gametitle{
+    margin-top: 2vh;
+    text-align: center;
+    font-family: GodofWar;
+    color: gold;
+}
+
+/* Stijlen voor de afbeelding in het Havoc-gedeelte */
+.Havoc-image{
+    margin-top: 2vh;
+    width: 28vw;
+}
+
+/* Stijlen voor de knoppen in de game-secties (game-jandro, game-junior, game-dean) */
+.game-jandro-button{
+    width: 28vw;
+    height: 7vh;
+    text-align: center;
+    background-color: rgb(57, 0, 80);
+    border: 0;
+    margin-top: 1.6vh;
+    border-radius: 0 0 2.38rem 2.38rem;
+    color: gold;
+    font-size: 1.7rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    font-family: GodofWar;
+}
+
+.game-jandro-link{
+    color: gold;
+}
+
+.game-junior-button{
+    width: 28vw;
+    height: 7vh;
+    text-align: center;
+    background-color: rgb(57, 0, 80);
+    border: 0;
+    margin-top: 1.1vh;
+    border-radius: 0 0 2.38rem 2.38rem;
+    color: gold;
+    font-size: 1.7rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.game-junior-link{
+    color: gold;
+}
+
+.game-dean-button{
+    width: 28vw;
+    height: 7vh;
+    text-align: center;
+    background-color: rgb(57, 0, 80);
+    border: 0;
+    margin-top: 6.6vh;
+    border-radius: 0 0 2.38rem 2.38rem;
+    color: gold;
+    font-size: 1.7rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Hover-stijlen voor de knoppen in de game-secties (game-jandro, game-junior, game-dean) */
+.game-jandro-button:hover, .game-junior-button:hover, .game-dean-button:hover{
+    background-color: rgb(100, 24, 130);
+}
+
+/* Stijlen voor een alternatieve gametitel */
+.gametitle-other{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: gold;
+}
+
+/* Stijlen voor de algemene titel van het spel */
+.Game-Title{
+    text-transform: uppercase;
+    letter-spacing: 1rem; 
+    font-size: 9rem;
+    color: white;
+    text-transform: uppercase; 
+}
+
+/* Stijlen voor de eerste sectie van de TCR */
 .p1-TCR{
     width: 98.9vw;
-    height: 93vh;
+    height: 100vh;
     background-color: #4f5d2f;
     display: flex;
     flex-direction: row;
 }
 
+/* Stijlen voor de eerste favoriete doelsectie */
 .p1-favoriete-doel{
     width: 98.9vw;
     height: 100vh;
     background-color: #d56f3e;
 }
 
+/* Stijlen voor de tweede favoriete doelsectie */
 .p2-favoriete-doel{
     width: 98.9vw;
     height: 100vh;
     background-color: #5c6644;
 }
 
+/* Stijlen voor de tekststijlen in favoriete doelsecties */
 #jandro{
     color: #e7dfc6;
     text-align: center;
@@ -239,6 +550,7 @@ li:hover{
     padding-top: 7vh;
 }
 
+/* Stijlen voor projectcontainers in favoriete doelsecties */
 .proju1,.proju2,.proju3{
     width: 25vw;
     height: 65vh;
@@ -263,6 +575,7 @@ li:hover{
     justify-content: space-between;
 }
 
+/* Container voor alle projecten in favoriete doelsecties */
 .projall{
     display: flex;
     flex-direction: row;
@@ -270,6 +583,7 @@ li:hover{
     margin-top: 2vh;
 }
 
+/* Stijlen voor projecttitels in favoriete doelsecties */
 .projt{
     text-align: center;
     color: #e7dfc6;
@@ -278,11 +592,13 @@ li:hover{
     margin-top: 2vh;
 }
 
+/* Stijlen voor lijstitems (knoppen) in favoriete doelsecties */
 .btn{
     list-style-type: none;
     margin-left: 0;
 }
 
+/* Hover-stijlen voor knoppen in groene sectie */
 .btn-li{
     padding: .9vh 10.8vw .9vh 10.9vw;
     font-size: 1.5rem;
@@ -290,6 +606,7 @@ li:hover{
     border-radius: 0rem 0rem .6rem .6rem;
 }
 
+/* Hover-stijlen voor knoppen in oranje sectie */
 .btnj-li{
     padding: .9vh 10.8vw .9vh 10.9vw;
     font-size: 1.5rem;
@@ -310,6 +627,7 @@ li:hover{
     background-color: #5c6644;
 }
 
+/* Stijlen voor de donatieknop */
 .donate{
     background-color: #d56f3e;
     border: 0px solid transparent;
@@ -321,6 +639,7 @@ li:hover{
     color: #e7dfc6;
 }
 
+/* Hover-stijlen voor de donatieknop */
 .donate:hover{
     background-color: #c05b2c;
     border: 0px solid transparent;
@@ -331,12 +650,14 @@ li:hover{
     padding: 1rem;
 }
 
+/* Stijlen voor de voettekst van het portfolio */
 .footer-portofolio{
     background-color: rgb(48, 48, 48);
     width: 98.9vw;
     height: 20vh;
 }
 
+/* Stijlen voor de kop van de voettekst */
 .footer-h3{
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -346,6 +667,7 @@ li:hover{
     width: 98.9vw;
 }
 
+/* Stijlen voor projectbeschrijvingen en -afbeeldingen */
 #proj-description01{
     text-align: center;
     width: 20vw;
@@ -393,6 +715,7 @@ li:hover{
     z-index: 0;
 }
 
+/* Stijlen voor informatietekst */
 .Info{
     width: 8vw;
     height: 5vh;
@@ -402,6 +725,7 @@ li:hover{
     background-color: #5c6644;
 }
 
+/* Stijlen voor doeltitel en doelteksten */
 .doel-title{
     text-align: center;
     font-size: 5rem;
@@ -427,6 +751,7 @@ li:hover{
     margin-left: 10vw;
 }
 
+/* Stijlen voor afbeeldingen van goede doelen */
 .rode-kruis{
     margin-top: 3vh;
     margin-left: 23vw;
@@ -445,11 +770,13 @@ li:hover{
     margin-top: 2vh;
 }
 
+/* Onderlijning en blauwe kleur voor tekst met class .WN */
 .WN{
     text-decoration: underline;
     color: blue;
 }
 
+/* Stijlen voor elementen met class .WNF */
 .WNF{
     width: 30vw;
     margin-top: 2vh;
@@ -457,6 +784,7 @@ li:hover{
     margin-right: 2vw;
 }
 
+/* Stijlen voor tekstblok met class .doel-2 */
 .doel-2{
     text-align: center;
     font-size: 1.5rem;
@@ -466,32 +794,36 @@ li:hover{
     margin-left: 10vw;
 }
 
+/* Stijlen voor de derde favoriete doelsectie */
 .p3-favoriete-doel{
     width: 98.9vw;
     height: 100vh;
     background-color: #c05b2c;
 }
 
+/* Stijlen voor de hoofdpagina */
 .main-page{
     width: 98.9vw;
-    height: 92.2vh;
-    background-color: aqua;
+    height: 100vh;
     display: flex;
 }
 
+/* Stijlen voor het eerste hoofdgedeelte */
 .first-main{
     width: 70vw;
-    height: 92.2vh;
+    height: 100vh;
     background-color: #4f5d2f;
 }
 
+/* Stijlen voor het tweede hoofdgedeelte met afbeelding als achtergrond */
 .second-main{
     width: 28.9vw;
-    height: 92.2vh;
+    height: 100vh;
     background-image: url(./Images/side-bg.jpg);
-    background-size: 105%;
+    background-size: 115%;
 }
 
+/* Stijlen voor de hoofdtitel van het hoofdgedeelte */
 .M-Title{
     font-size: 10rem;
     font-family: 'Times New Roman', Times, serif;
@@ -503,6 +835,7 @@ li:hover{
      background-size: 75%;
 }
 
+/* Stijlen voor de paragraaf van het hoofdgedeelte */
 .M-Par{
     font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
@@ -511,22 +844,42 @@ li:hover{
     color: #e7dfc6;
 }
 
+/* Stijlen voor het tweede motivatiegedeelte met achtergrondafbeelding */
 .second-motivatie{
     width: 98.9vw;
     height: 100vh;
-    background-image: url(./Images/motivatie-jandro-background.svg);
+    background-image: url(./Images/bloemdeboom.jpg);
     background-position-y: -8rem;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
+.second-motivatie-dean{
+    width: 98.9vw;
+    height: 100vh;
+    background-image: url(./Images/jungle.jpg);
+    background-position-y: -8rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.second-motivatie-junior{
+    width: 98.9vw;
+    height: 100vh;
+    background-image: url(./Images/94134.jpg);
+    background-position-y: -2rem;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* Stijlen voor specifieke motivatie-elementen */
 .jandro-motivatie{
     padding-top: 15vh;
     font-size: 8rem;
     text-align: center;
     letter-spacing: 1rem;
-    color: #d56f3e;
-}
+    color: #e7dfc6;
+}   
 
 .motivatie-text{
     font-family: 'Times New Roman', Times, serif;
@@ -534,15 +887,17 @@ li:hover{
     text-align: left;
     font-weight: 900;
     padding-top: 6vh;
-    color: #d56f3e;
+    color: #e7dfc6;
 }
 
+/* Stijlen voor een semi-transparante achtergrond voor clips */
 .clip-bg{
     width: 98.9vw;
     height: 50vh;
     background-color: rgba(0, 0, 0, 0.463);
 }
 
+/* Stijlen voor het hoofddoelgedeelte met achtergrondafbeelding */
 .main-doel{
     width: 98.9vw;
     height: 100vh;
@@ -553,12 +908,14 @@ li:hover{
     justify-content: center;
 }
 
+/* Stijlen voor het model van het hoofddoel */
 .doel-model{
     border: white solid 5px;
     height: 25vh;
     width: 49vw;
 }
 
+/* Stijlen voor tekstblokken van het hoofddoel */
 .doel-text-01{
     font-size: 5rem;
     height: 19vh;
@@ -579,9 +936,10 @@ li:hover{
     margin-left: 32vw;
 }
 
+/* Stijlen voor de derde doelsectie met drie letters */
 .tcr-div{
     width: 40vw;
-    height: 93vh;
+    height: 92vh;
     background-color: #d56f3e;
     display: flex;
     flex-direction: column;
@@ -589,8 +947,10 @@ li:hover{
     align-items: center;
     position: absolute;
     right: 0;
+    top: 8vh;
 }
 
+/* Stijlen voor specifieke letters in de doelsectie */
 span{
     font-size: 4rem;
     font-weight: 900;
@@ -598,17 +958,17 @@ span{
 }
 
 .T{
-    margin-top: 3vh;
+    margin-top: 11vh;
     margin-left: 16vw;
 }
 
 .C{
-    margin-top: 3vh;
+    margin-top: 11vh;
     margin-left: 8vw;
 }
 
 .R{
-    margin-top: 3vh;
+    margin-top: 11vh;
     margin-left: 8vw;
 }
 
@@ -616,6 +976,7 @@ span{
     color: green;
 }
 
+/* Stijlen voor het hoofdgedeelte van een cv (Curriculum Vitae) */
 .cv{
     width: 45vw;
     height: 70vh;
@@ -629,6 +990,33 @@ span{
     flex-direction: column;
 }
 
+.cv-junior{
+    width: 45vw;
+    height: 70vh;
+    background-color: rgba(33, 33, 33, 0.595);
+    background-size: cover;
+    border: 5px solid #5c6644;
+    border-radius: 0 0 50px 50px;
+    margin-left: 5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cv-Dean{
+    width: 45vw;
+    height: 70vh;
+    background-color: rgba(33, 33, 33, 0.595);
+    background-size: cover;
+    border: 5px solid #d56f3e;
+    border-radius: 0 0 50px 50px;
+    margin-left: 5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Stijlen voor knoppen in het cv-gedeelte */
 .cv-button{
     height: 5.15vh;
     width: 5.93vw;
@@ -647,10 +1035,12 @@ span{
     color: #e7dfc6;
 }
 
+/* Hover-stijlen voor cv-knoppen */
 .cv-button:hover, .cv-button1:hover{
     background-color: #667b34;
 }
 
+/* Stijlen voor navigatiebalk van het cv-gedeelte */
 .cv-nav{
     width: 45vw;
     height: 5.2vh;
@@ -658,6 +1048,21 @@ span{
     border-bottom: 5px solid #d56f3e;
 }
 
+.cv-nav-junior{
+    width: 45vw;
+    height: 5.2vh;
+    background-color: #4f5d2f;
+    border-bottom: 5px solid #5c6644;
+}
+
+.cv-nav-Dean{
+    width: 45vw;
+    height: 5.2vh;
+    background-color: #4f5d2f;
+    border-bottom: 5px solid #d56f3e;
+}
+
+/* Stijlen voor de hoofdafbeelding in het cv-gedeelte */
 #cv-image{
     width: 45vw;
     height: 64.4vh;
@@ -673,9 +1078,26 @@ span{
     border-radius: 0 0 46px 46px;
     z-index: 1;
     position: absolute;
-    margin-top: 5.7vh;
+    margin-top: 6.5vh;
 }
 
+/* Stijlen voor contactafbeeldingen */
+.contact-image, .email-image{
+    margin-top: 1vh;
+    width: 7vw;
+}
+
+/* Stijlen voor de hoofdafbeelding van Dean's CV */
+#cv-imagedean{
+    
+    height: 60vh;
+    border-radius: 0 0 46px 46px;
+    z-index: 1;
+    position: absolute;
+    margin-top: 6.5vh;
+}
+
+/* Stijlen voor contactsectie van het CV */
 .contact-image, .email-image{
     margin-top: 1vh;
     width: 7vw;
@@ -690,7 +1112,6 @@ span{
     position: absolute;
 }
 
-
 #cv-contact-junior{
     display: flex;
     flex-direction: column;
@@ -700,11 +1121,22 @@ span{
     position: absolute;
 }
 
+#cv-contact-dean{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+    z-index: -1;
+    position: absolute;
+}
+
+/* Stijlen voor telefoon- en e-mailsectie in contact */
 .phone, .e-mail{
     display: flex;
     flex-direction: row;
 }
 
+/* Stijlen voor contactteksten */
 .contact-tekst{
     margin: 12vh 0 0 1vw;
     color: #e7dfc6;
@@ -715,6 +1147,7 @@ span{
     margin: 5vh 0 0 1vw;
 }
 
+/* Stijlen voor videopitchsectie */
 #videopitch{
     margin-top: 12vh;
     width: 45vw;
@@ -729,6 +1162,14 @@ span{
     position: absolute;
 }
 
+#videopitch-dean{
+    margin-top: 15vh;
+    width: 35vw;
+    z-index: -2;
+    position: absolute;
+}
+
+/* Stijlen voor ervaringsectie */
 #ervaring{
     position: absolute;
     z-index: -1;
@@ -741,12 +1182,20 @@ span{
     margin-top: 10vh;
 }
 
+#ervaring-dean{
+    position: absolute;
+    z-index: -1;
+    margin-top: 10vh;
+}
+
+/* Stijlen voor verschillende tekst- en titelonderdelen in ervaringsectie */
 .ervaring-tekst, .ervaring-title, .ervaring-tekst1{
     color: #e7dfc6;
     width: 40vw;
     margin-bottom: 2vh;
 }
 
+/* Stijlen voor tekst- en titelonderdelen in Standard of Deviation (SOD) sectie */
 .sod-tekst, .sod-title{
     color: #e7dfc6;
     width: 40vw;
@@ -754,15 +1203,18 @@ span{
     text-align: center;
 }
 
+/* Specifieke stijlen voor titels in ervaring- en SOD-sectie */
 .ervaring-title, .sod-title{
     margin-bottom: 3vh;
     text-align: center;
 }
 
+/* Specifieke stijlen voor een deel van de tekst in ervaringsectie */
 .ervaring-tekst1{
     text-align: right;
 }
 
+/* Stijlen voor Opleidingsectie */
 #Opleiding{
     z-index: -1;
     position: absolute;
@@ -775,6 +1227,13 @@ span{
     margin-top: 14vh;
 }
 
+#Opleiding-dean{
+    z-index: -1;
+    position: absolute;
+    margin-top: 14vh;
+}
+
+/* Stijlen voor Vaardighedensectie */
 #vaardigheden{
     z-index: -1;
     position: absolute;
@@ -787,6 +1246,13 @@ span{
     margin-top: 14vh;
 }
 
+#vaardigheden-dean{
+    z-index: -1;
+    position: absolute;
+    margin-top: 14vh;
+}
+
+/* Stijlen voor Projectensectie */
 .projecten{
     width: 30vw;
     height: 34.5vw;
@@ -796,12 +1262,32 @@ span{
     border-radius: 50px;
 }
 
+.projecten-junior{
+    width: 30vw;
+    height: 32.5vw;
+    background-color: #5c6644;
+    margin-left: 9vw;
+    border: 5px solid #4f5d2f;
+    border-radius: 50px;
+}
+
+.projecten-Dean{
+    width: 30vw;
+    height: 32.5vw;
+    background-color: #5c6644;
+    margin-left: 9vw;
+    border: 5px solid #d56f3e;
+    border-radius: 50px;
+}
+
+/* Stijlen voor sjabloonportfolio */
 .template-portofolio{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+/* Stijlen voor projecttekst */
 .proj-tekst{
     text-align: center;
     font-size: 4rem;
@@ -810,12 +1296,20 @@ span{
     color: #e7dfc6;
 }
 
+/* Stijlen voor afbeeldingen in projectsectie */
 .magic-image{
     margin-bottom: 2vh;
     margin-left: .75vw;
     border-radius: 2rem;
 }
 
+.project-image-dean{
+    margin-top: 1vh;
+    margin-left: .75vw;
+    border-radius: 2rem;
+}
+
+/* Stijlen voor projectdisclaimer */
 .proj-dis{
     text-align: center;
     width: 25vw;
@@ -823,6 +1317,7 @@ span{
     color: #e7dfc6;
 }
 
+/* Stijlen voor projectknoppen */
 .proj-button{
     margin-top: 6.3vh;
     width: 29.99vw;
@@ -835,11 +1330,12 @@ span{
     font-family: 'Times New Roman', Times, serif;
     color: #e7dfc6;
 }
+
 .proj-button-junior{
-    margin-top: 6.3vh;
+    margin-top: 3.9vh;
     width: 29.99vw;
     height: 7vh;
-    border-radius: 0 0 48px 48px;
+    border-radius: 0 0 44px 44px;
     border: 0;
     background-color: #5c6644;
     font-size: 2rem;
@@ -848,15 +1344,32 @@ span{
     color: #e7dfc6;
 }
 
-.proj-button:hover, .proj-button-junior:hover{
+.proj-button-dean{
+    margin-top: 1vh;
+    width: 29.99vw;
+    height: 7.6vh;
+    border-radius: 0 0 44px 44px;
+    border: 0;
+    background-color: #5c6644;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #e7dfc6;
+}
+
+/* Hover-stijlen voor projectknoppen */
+.proj-button:hover, .proj-button-junior:hover, .proj-button-dean:hover{
     background-color: #4f5d2f;
 }
 
+/* Stijlen voor markeringselementen */
 mark{
     background-color: aqua;
     color: rgb(40, 40, 40);
 }
 
+/* Hover-stijlen voor gemarkeerde elementen */
 mark:hover{
     background-color: rgb(29, 208, 208);
+    cursor: pointer;
 }

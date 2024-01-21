@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  #app {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  #quote {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #result {
+    font-size: 18px;
+    margin: 20px 0;
+    color: green;
+  }
+  
