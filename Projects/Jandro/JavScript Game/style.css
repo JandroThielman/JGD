@@ -25,6 +25,8 @@ canvas{
     height: 70vh;
     background-image: url('./Images/GameOver.png');
     background-size: cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
     position: absolute;
     z-index: 0;
     display: flex;
